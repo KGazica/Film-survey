@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="film-survey" action="result.html" method="GET">
+      <h1>FILM SURVEY</h1>
+      <p>Thank you for participating in the film festival!</p>
+      <p>Please fill out this short survey so we can record your feedback</p>
+
+      <div>
+        <label for="film">What film did you watch?</label>
+      </div>
+      <div>
+        <input type="text" id="film" name="film" required />
+      </div>
+      <div>
+        <label for="rating"
+          >How would you rate the film? (1 - very bad, 5 - very good)
+        </label>
+      </div>
+      <input type="number" id="rating" name="rating" min="1" max="5" required />
+      <div><button class="submit">Submit</button></div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
